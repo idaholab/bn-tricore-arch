@@ -1,0 +1,25 @@
+// Copyright (c) 2025. Battelle Energy Alliance, LLC
+// ALL RIGHTS RESERVED
+
+#ifndef BINARYNINJA_API_TRICORE_FLAGS_H
+#define BINARYNINJA_API_TRICORE_FLAGS_H
+
+#define FLAG_CARRY 0
+#define FLAG_OVERFLOW 1
+#define FLAG_STICKY_OVERFLOW 2
+#define FLAG_ADVANCE_OVERFLOW 3
+#define FLAG_STICKY_ADVANCE_OVERFLOW 4
+
+#define WRITE_NONE 0
+#define WRITE_ALL 1
+#define WRITE_VSVAV 2
+#define WRITE_VSVAVSAV 3  // all except carry
+
+// Floating Point Flags
+#define WRITE_ALL_FP 4
+#define WRITE_FSFI 5
+#define WRITE_FSFX 6
+#define WRITE_FSFIFX 7
+#define WRITE_FSFIFVFUFX 8
+
+#endif  // BINARYNINJA_API_TRICORE_FLAGS_H
